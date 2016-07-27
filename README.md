@@ -2,6 +2,7 @@
 GeoCenter resources
 ===
 Untidy data: multiple values per cell  
+
 | project  | region                      |
 |----------|-----------------------------|
 | project1 | Afar, Oromia                |
