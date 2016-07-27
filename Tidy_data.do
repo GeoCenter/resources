@@ -1,9 +1,10 @@
 /*-------------------------------------------------------------------------------
-# Name:		TidyData
-# Purpose:	Show how to fix untidy data using Stata code
-# Author:	Tim Essam, Ph.D. / USAID GeoCenter
-# Created:	2016/07
-# License:	MIT
+# Name:	   TidyData
+# Purpose: Show how to fix untidy data using Stata code
+# Author:  Tim Essam, Ph.D. / USAID GeoCenter
+# Created: 2016/07
+# License: MIT
+# Notes:   Code for Stata 13 or 14
 #-------------------------------------------------------------------------------
 */
 
@@ -13,7 +14,8 @@ capture log close
 
 
 * Creating Tidy Data
-cd "C:/Users/tessam/Documents/TidyData"
+cd "C:/Users/Tim/Documents/TidyData"
+log using "TidyData.txt", replace
 copy "https://github.com/GeoCenter/resources/blob/master/untidy_data.xlsx?raw=true" untidy_data.xlsx, replace
 
 
@@ -64,6 +66,9 @@ la var year "year"
 la var region "Ethiopia region (administrative unit 1)"
 la var cholera_cases "Number of cholera cases reported"
 
+* write the data frame to the window
+clist, noo
+
 * optional -- if you want to save the data
 save "tidyData_ex1.dta", replace
 
@@ -94,20 +99,22 @@ isid uniqueid
 * Add a few variable labels
 la var regionCode "region code"
 la var region "Ethiopia region (administrative unit 1)"
-
+clist, noo
 
 
 
 
 * Example 3: No unique id
 ***********************************************************************************
+clear
 import excel untidy_data.xlsx, sheet("no_unique_id") firstrow
 
 * Check if the combination of project and region make a variable unique
 isid project region
 
 egen id = group(project region) 
-
+sort id
+clist, noo
 
 
 
@@ -122,6 +129,7 @@ la var TB "Number of tuberculosis cases reported
 
 egen regionid = group(region)
 isid regionid
+clist, noo
 
 
 
@@ -139,7 +147,7 @@ reshape long cholera@, i(region) j(year)
 
 egen id = group(regionid year)
 isid id
-
+clist, noo
 
 
 
@@ -150,6 +158,7 @@ import excel untidy_data.xlsx, sheet("inconsistent_data") firstrow
 
 * Notice that everything imports as a string b/c of inconsistencies
 d
+clist, noo
 
 * First, let's remove row 4 as this is duplicative of row 3
 drop if project == "project3" & start_date == "01012014"
@@ -191,9 +200,12 @@ drop funding
 ren funding2 funding
 la var funding "total funding by project"
 
+* Format the funding variable for readability below
+format funding %14.0fc
+
 * Create a unique id for projects
 egen projectid = group(project)
-
+clist, noo
 
 
 
@@ -218,8 +230,7 @@ egen regionid = group(region)
 la var TB_cases_num "tuberculosis cases"
 
 order region regionid TB_cases_num cholera_cases
-list
-
+clist, noo
 
 
 
@@ -239,13 +250,15 @@ replace status = "really not okay" if project == "project4"
 
 * Now, let's encode the status so it can be used as a factor
 encode status, gen(status_enc)
+tab status_enc, nolabel
+tab status_enc
 
 * create a unique project id
 egen projectid = group(project)
 isid projectid
 
 la var project "project number"
-
+clist, noo
 
 
 
@@ -253,3 +266,27 @@ la var project "project number"
 * Example 9: Undocumented, vague data
 ***********************************************************************************
 clear
+import excel untidy_data.xlsx, sheet("undocumented") firstrow 
+clist, noo
+
+* Need to add value labels to the region so we know what 5, 1, and 7 mean
+label define reglab 1 "Oromia" 5 "Afar" 7 "Somali"
+label values region reglab
+tab region
+tab region, nol
+
+* Label variables
+la var funding "funding in USD"
+la var project "project numbeR"
+la var region "Ethiopia region"
+
+* Add a note about the funding variable
+notes funding: funding amount is in 2015 USD
+
+* create a unique project id
+egen projectid = group(project)
+isid projectid
+clist, noo
+
+
+capture log close
