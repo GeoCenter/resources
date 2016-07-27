@@ -1,7 +1,7 @@
 # resources
 GeoCenter resources
 ===
-Untidy data: multiple values per cell  
+###Untidy data: multiple values per cell  
 
 | project  | region                      |
 |----------|-----------------------------|
