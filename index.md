@@ -1,16 +1,16 @@
 ---
-layout: post
+layout: default
 
 ---
 
-#Data science resources
+# Data science resources
 
 <br>
 
-##Resources developed and curated by USAID's GeoCenter on data analysis and visualization
+## Resources developed and curated by USAID's GeoCenter on data analysis and visualization
 <br>
 
-###Data analysis
+### Data analysis
 * <a href = "/resources/pdf/Diagram of Analytical Process.pdf" id = "analyticalprocess"
 target = "_blank" onclick="trackOutboundLink('DiagramofAnalyticalProcess.pdf');">Data Analysis Process</a> [Tim Essam and Laura Hughes]
 * <a href = "/resources/pdf/Threats to tidy data handout.pdf" id = "tidydata"
@@ -19,7 +19,7 @@ target = "_blank" onclick="trackOutboundLink('ThreatsToTidyData.pdf');">Common T
 target = "_blank" onclick="trackOutboundLink('Link to Stata Cheatsheets site');">Stata Cheatsheets</a> [Tim Essam and Laura Hughes]
 <br>
 
-###Data visualization
+### Data visualization
 * <a href = "/resources/pdf/Data Visualization Process.pdf" id = "visprocess"
 target = "_blank" onclick="trackOutboundLink('DataVisualizationProcess.pdf');">Data Visualization Process</a> [Laura Hughes]
 * <a href = "/resources/pdf/Takeaways for Good Visualization.pdf"
