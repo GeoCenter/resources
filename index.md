@@ -1,6 +1,6 @@
 ---
-layout: default
-description: Data science resources
+layout: post
+
 ---
 
 #Data science resources
