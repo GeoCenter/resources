@@ -125,7 +125,7 @@ import excel untidy_data.xlsx, sheet("varnames_not_meaningful") firstrow
 
 rename (variable1 variable2) (cholera TB)
 la var cholera "Number of cholera cases reported"
-la var TB "Number of tuberculosis cases reported
+la var TB "Number of tuberculosis cases reported"
 
 egen regionid = group(region)
 isid regionid
