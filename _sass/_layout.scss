@@ -1,349 +1,373 @@
 
 /**
- * Site header   **********************************************************
- */
+* Site header   **********************************************************
+*/
 .site-header {
-border-bottom: 1px solid $grey-color-light;
-background-color: #fff;
-opacity: 0.75;
-position:fixed;
-left:0px;
-top:0px;
-height:56px;
-width:100%;
-z-index: 50;
+  border-bottom: 1px solid $grey-color-light;
+  background-color: #fff;
+  opacity: 0.75;
+  position:fixed;
+  left:0px;
+  top:0px;
+  height:56px;
+  width:100%;
+  z-index: 50;
 }
 
 .site-title {
-font-size: 20px;
-line-height: $nav-height;
-letter-spacing: -1px;
-margin-bottom: 0;
-&:hover {
-text-decoration: none;
-color: $theme-color;
-    }
+  font-size: 20px;
+  line-height: $nav-height;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  &:hover {
+    text-decoration: none;
+    color: $theme-color;
+  }
 }
 .site-nav {
-float: right;
-line-height: $nav-height;
-.page-link{
-line-height: $base-line-height;
-        // Gaps between nav items, but not on the first one
-&:not(:first-child) {
-margin-left: 10px;
-        }
+  float: right;
+  line-height: $nav-height;
+  .page-link{
+    line-height: $base-line-height;
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 10px;
     }
-@include media-query($on-palm) {
-position: fixed;
-top: 0px;
-right: 10px;
-text-align: right;
-&:hover .trigger {
-display: block;
-padding-bottom: 5px;
-        }
-.page-link {
-display: line;
-        }
+  }
+  @include media-query($on-palm) {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    text-align: right;
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
     }
+    .page-link {
+      display: line;
+    }
+  }
 }
 
 .header-bar{
-    left: 0px;
-    top: 0px;
-    position: relative;
-    font-size: 20px;
-    display: block;
-    opacity: 0.75;
-    width: 100%;
-    text-align: center;
-    padding-top: 25px;
-    line-height: 4em;
-    z-index: 25;
-    h1{
-        color: $theme-color;
-        font-size:75px;
-    }
-    h2{
-        font-size:25px;
-        line-height: 1.5em;
-    }
+  left: 0px;
+  top: 0px;
+  position: relative;
+  font-size: 20px;
+  display: block;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 4em;
+  z-index: 25;
+  h1{
+    color: $theme-color;
+    font-size:75px;
+  }
+  h2{
+    font-size:25px;
+    line-height: 1.5em;
+  }
 }
 
 /**
- * Site footer  **********************************************************
- */
+* Site footer  **********************************************************
+*/
 .site-footer {
-border-top: 1px solid $grey-color-dark;
-font-size: 10px;
-background-color: $grey-color-dark;
-padding: 2px;
-color: #8a8c8e;
-position:fixed;
-left:0px;
-bottom:0px;
-height:25px;
-width:100%;
+  border-top: 1px solid $grey-color-dark;
+  font-size: 10px;
+  background-color: $grey-color-dark;
+  padding: 2px;
+  color: #8a8c8e;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:25px;
+  width:100%;
 }
 /**
- * Pagination   **********************************************************
- */
+* Pagination   **********************************************************
+*/
 .pagination{
-max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-text-align: center;
-width: 100%;
-position: fixed;
-bottom: 50px;
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
 }
 .paginationicon {
-font-size: 50px;
-a {
-color: $theme-color;
-    }
+  font-size: 50px;
+  a {
+    color: $theme-color;
+  }
 }
 /**
- * Page content   **********************************************************
- */
+* Page content   **********************************************************
+*/
 .page-content {
-padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
+  padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
 }
-.page-heading {
-font-size: 20px;
+
+.page-content {
+  h1 {
+    font-size: 36px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+      font-size: 15px;
+    }
+  }
+  h3 {
+    font-size: 15px;
+    @include media-query($on-laptop) {
+      font-size: 12px;
+    }
+  }
+  h4 {
+    font-size: 12px;
+    @include media-query($on-laptop) {
+      font-size: 9px;
+    }
+  }
 }
 .post-list {
-margin: 0px 0;
-list-style: none;
-    > li {
-margin-bottom: $vertical-spacing-unit;
-    }
+  margin: 10px 0;
+  margin-left: 50px;
+  list-style-type: disc;
+  > li {
+    margin-bottom: $vertical-spacing-unit;
+  }
 }
 .contacticon {
-color: $blue;
-font-size: 40px;
-display:block;
-margin: 10px;
+  color: $blue;
+  font-size: 40px;
+  display:block;
+  margin: 10px;
 }
 .center{
-text-align: center;
+  text-align: center;
 }
 /**
- * Posts  **********************************************************
- */
+* Posts  **********************************************************
+*/
 .post-header {
-margin-bottom: $vertical-spacing-unit;
+  margin-bottom: $vertical-spacing-unit;
 }
 .post-title {
-font-size: 42px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 36px;
-    }
+  font-size: 30px;
+  @include media-query($on-laptop) {
+    font-size: 22px;
+  }
 }
+
 .post-content {
-h2 {
-font-size: 42px;
-@include media-query($on-laptop) {
-font-size: 28px;
-        }
+  h2 {
+    font-size: 42px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
     }
-h3 {
-font-size: 30px;
-@include media-query($on-laptop) {
-font-size: 22px;
-        }
+  }
+  h3 {
+    font-size: 30px;
+    @include media-query($on-laptop) {
+      font-size: 22px;
     }
-h4 {
-font-size: 20px;
-@include media-query($on-laptop) {
-font-size: 18px;
-        }
+  }
+  h4 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+      font-size: 18px;
     }
+  }
 }
 .post-meta {
-font-size: $small-font-size;
-color: $grey-color;
-margin-bottom: 0px; 
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin-bottom: 0px;
 }
 .post-link {
-display: block;
-font-size: 42px;
+  font-size: $base-font-size;
+
 }
 
 /** Poem formatting ********************************************/
 .poem-title {
-font-size: 24px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 16px;
-    }
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 1;
+  @include media-query($on-laptop) {
+    font-size: 16px;
+  }
 }
 
 
-/** 
- * Portfolio grid **********************************************************
+/**
+* Portfolio grid **********************************************************
 */
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-content: " ";
-display: table;
+  content: " ";
+  display: table;
 }
 .clearfix:after {
-clear: both;
+  clear: both;
 }
 .project {
-width: 25%;
-height: 250px;
-float: left;
-vertical-align: middle;
-box-sizing: border-box;
-padding: 10px;
+  width: 25%;
+  height: 250px;
+  float: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 10px;
 }
 .resource {
-width: 50%;
-height: 250px;
-float: left;
-vertical-align: middle;
-box-sizing: border-box;
-padding: 10px;
+  width: 50%;
+  height: 250px;
+  float: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 10px;
 }
 .icon {
-width: 20%;
-height: 150px;
-float: left;
-vertical-align: middle;
-box-sizing: border-box;
-padding: 5px;
-line-height: 1em;
+  width: 20%;
+  height: 150px;
+  float: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 5px;
+  line-height: 1em;
 }
 
 
 .thumbnailicon{
-width: 100%;
-height: 130px;
-overflow: hidden;
-line-height: 1.25em;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  line-height: 1.25em;
 }
 .thumbnailicon img{
-width: 100%;
-height: 130px;
-position: relative;
+  width: 100%;
+  height: 130px;
+  position: relative;
 }
 .thumbnailicon a{
-float: left;
-position: relative;
-width: 100%;
-height: 130px;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 130px;
 }
 .thumbnailicon a span {
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgba(0,0,0,0.4);
-color: $grey-color-light;
-padding: 8px;
-text-align: center;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+  color: $grey-color-light;
+  padding: 8px;
+  text-align: center;
 }
 .thumbnailicon a:hover span {
-display: block;
+  display: block;
 }
 
 .thumbnail{
-width: 100%;
-height: 230px;
-overflow: hidden;
-line-height: 2em;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  line-height: 2em;
 }
 .thumbnail img{
-width: 100%;
-height: 230px;
-position: relative;
+  width: 100%;
+  height: 230px;
+  position: relative;
 }
 .thumbnail a{
-float: left;
-position: relative;
-width: 100%;
-height: 230px;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 230px;
 }
 .thumbnail a span {
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgba(0,0,0,0.4);
-color: $grey-color-light;
-padding: 40px;
-text-align: center;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+  color: $grey-color-light;
+  padding: 40px;
+  text-align: center;
 }
 .thumbnail a:hover span {
-display: block;
+  display: block;
 }
-/** 
- * Portfolio pages **********************************************************
+/**
+* Portfolio pages **********************************************************
 */
 .blankbox{
-background: $theme-color;
+  background: $theme-color;
 }
 .img_row{
-height: $img_height;
-width: 100%;
-overflow: hidden;
-box-sizing:border-box;
-padding: $img_spacing;
+  height: $img_height;
+  width: 100%;
+  overflow: hidden;
+  box-sizing:border-box;
+  padding: $img_spacing;
 }
-.col{ 
-width: 100%;
-height: 100%;
-float: left;
-object-fit: contain;
-box-sizing:border-box;
-padding: $img_spacing;
-padding-bottom: 40px;
+.col{
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: contain;
+  box-sizing:border-box;
+  padding: $img_spacing;
+  padding-bottom: 40px;
 }
 .right{
-float: right;
+  float: right;
 }
 .one {
-width:25%;
+  width:25%;
 }
 .two {
-width: 66.66%;
+  width: 66.66%;
 }
 .three{
-width: 100%;
+  width: 100%;
 }
 .caption{
-height: 100%;
-color: $caption_color;
-text-align: left;
-vertical-align: top;
-font-size: $caption_font_size;
+  height: 100%;
+  color: $caption_color;
+  text-align: left;
+  vertical-align: top;
+  font-size: $caption_font_size;
 }
 .logo{
-    padding-left: $horizontal-spacing-unit;
-    width: auto;
-    height: 17px;
-    vertical-align: middle;
+  padding-left: $horizontal-spacing-unit;
+  width: auto;
+  height: 17px;
+  vertical-align: middle;
 }
 .return{
-    font-size: 24px;
-    text-align: center;
+  font-size: 24px;
+  text-align: center;
 }
 
 .resourcetext {
-    font-size: 20px;
-    @include media-query($on-laptop) {
+  font-size: 20px;
+  @include media-query($on-laptop) {
     font-size: 18px;
     vertical-align: middle;
     padding: 20px;
-    }
+  }
 }

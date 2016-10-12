@@ -148,8 +148,8 @@ pre {
   clear: both; }
 
 /**
- * Site header   **********************************************************
- */
+* Site header   **********************************************************
+*/
 .site-header {
   border-bottom: 1px solid #ddd;
   background-color: #fff;
@@ -209,8 +209,8 @@ pre {
     line-height: 1.5em; }
 
 /**
- * Site footer  **********************************************************
- */
+* Site footer  **********************************************************
+*/
 .site-footer {
   border-top: 1px solid #ccc;
   font-size: 10px;
@@ -224,8 +224,8 @@ pre {
   width: 100%; }
 
 /**
- * Pagination   **********************************************************
- */
+* Pagination   **********************************************************
+*/
 .pagination {
   max-width: -webkit-calc(800px - (50px * 2));
   text-align: center;
@@ -239,18 +239,37 @@ pre {
     color: #92A8D1; }
 
 /**
- * Page content   **********************************************************
- */
+* Page content   **********************************************************
+*/
 .page-content {
   padding: 100px 0;
   /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
 
-.page-heading {
+.page-content h1 {
+  font-size: 36px; }
+  @media screen and (max-width: 800px) {
+    .page-content h1 {
+      font-size: 28px; } }
+.page-content h2 {
   font-size: 20px; }
+  @media screen and (max-width: 800px) {
+    .page-content h2 {
+      font-size: 15px; } }
+.page-content h3 {
+  font-size: 15px; }
+  @media screen and (max-width: 800px) {
+    .page-content h3 {
+      font-size: 12px; } }
+.page-content h4 {
+  font-size: 12px; }
+  @media screen and (max-width: 800px) {
+    .page-content h4 {
+      font-size: 9px; } }
 
 .post-list {
-  margin: 0px 0;
-  list-style: none; }
+  margin: 10px 0;
+  margin-left: 50px;
+  list-style-type: disc; }
   .post-list > li {
     margin-bottom: 40px; }
 
@@ -264,18 +283,16 @@ pre {
   text-align: center; }
 
 /**
- * Posts  **********************************************************
- */
+* Posts  **********************************************************
+*/
 .post-header {
   margin-bottom: 40px; }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
+  font-size: 30px; }
   @media screen and (max-width: 800px) {
     .post-title {
-      font-size: 36px; } }
+      font-size: 22px; } }
 
 .post-content h2 {
   font-size: 42px; }
@@ -299,8 +316,7 @@ pre {
   margin-bottom: 0px; }
 
 .post-link {
-  display: block;
-  font-size: 42px; }
+  font-size: 16px; }
 
 /** Poem formatting ********************************************/
 .poem-title {
@@ -311,8 +327,8 @@ pre {
     .poem-title {
       font-size: 16px; } }
 
-/** 
- * Portfolio grid **********************************************************
+/**
+* Portfolio grid **********************************************************
 */
 .clearfix:before,
 .clearfix:after {
@@ -411,8 +427,8 @@ pre {
 .thumbnail a:hover span {
   display: block; }
 
-/** 
- * Portfolio pages **********************************************************
+/**
+* Portfolio pages **********************************************************
 */
 .blankbox {
   background: #92A8D1; }
