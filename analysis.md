@@ -4,12 +4,13 @@ title: analysis
 ---
 
 ### Data analysis
-* <a href = "/resources/pdf/Diagram of Analytical Process.pdf" id = "analyticalprocess"
-target = "_blank" onclick="trackOutboundLink('DiagramofAnalyticalProcess.pdf');">Data Analysis Process</a> [Tim Essam and Laura Hughes]
+
+* <a href = "/resources/pdf/Diagram of Analytical Process.pdf" id = "analyticalprocess" target = "_blank" onclick="trackOutboundLink('DiagramofAnalyticalProcess.pdf');">Data Analysis Process</a> [Tim Essam and Laura Hughes]
 * <a href = "/resources/pdf/Threats to tidy data handout.pdf" id = "tidydata"
 target = "_blank" onclick="trackOutboundLink('ThreatsToTidyData.pdf');">Common Threats to Tidy Data</a> [Laura Hughes and Tim Essam]
 
 ### Stata
+
 * <a href = "http://geocenter.github.io/StataTraining/portfolio/01_resource/" id = "Stata"
 target = "_blank" onclick="trackOutboundLink('Link to Stata Cheatsheets site');">Stata Cheatsheets</a> [Tim Essam and Laura Hughes]
 <br>
@@ -18,5 +19,6 @@ target = "_blank" onclick="trackOutboundLink('Link to Stata Cheatsheets site');"
 * <a href = "http://www.stata.com/support/faqs/graphics/gph/stata-graphs/" target="_blank">Stata Graphs</a>: Visual overview for creating graphs
 
 ### R
+
 * [RStudio](https://www.rstudio.com/resources/faqs/){:target="_blank"}: Various resources, packages, and help from RStudio
 * [swirl](http://swirlstats.com/){:target="_blank"}: A package to learn R within R.
