@@ -96,6 +96,11 @@ target = "_blank" onclick="trackOutboundLink('DataVisualizationTakeaways.pdf');"
 <br>
 <br>
 
+
+#### Visualization in R
+- [ggplot2](http://ggplot2.org/){:target = "_blank"}
+- [Network graphs](http://kateto.net/network-visualization){:target = "_blank"}
+
 #### Color
 
 - <a href = "http://colorbrewer2.org/" target="_blank">ColorBrewer</a>: Cynthia Brewer's color palettes for sequential, diverging, and qualitative data. When in doubt, use Color Brewer.
