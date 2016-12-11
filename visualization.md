@@ -82,6 +82,9 @@ target = "_blank" onclick="trackOutboundLink('DataVisualizationTakeaways.pdf');"
 
 #### Chart types
 
+<a href = "https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf" target="_blank">
+	<img class = "col one" src = "/resources/img/ftcharts.png">
+</a>
 <a href = "http://www.datavizcatalogue.com/" target="_blank">
 	<img class = "col one" src = " /resources/img/charttypes.png">
 </a>
