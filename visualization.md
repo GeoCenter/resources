@@ -11,6 +11,9 @@ target = "_blank" onclick="trackOutboundLink('DataVisualizationProcess.pdf');">D
 target = "_blank" onclick="trackOutboundLink('DataVisualizationTakeaways.pdf');">Takeaways for Effective Visualizations</a> [Laura Hughes]
 <br>
 
+### Data visualization in Tableau
+* [Training Videos](https://www.tableau.com/learn/training){:target="_blank"}: Free training videos on the basics
+* [Create Custom Color Palettes](https://onlinehelp.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.html){:target="_blank"}: How to create your own custom color palettes (sample .tps [here](https://raw.githubusercontent.com/tessam30/TableauTraining/master/Preferences.tps))  
 
 
 ### Data visualization in Excel
