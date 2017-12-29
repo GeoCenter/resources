@@ -15,7 +15,6 @@ target = "_blank" onclick="trackOutboundLink('DataVisualizationTakeaways.pdf');"
 * [Training Videos](https://www.tableau.com/learn/training){:target="_blank"}: Free training videos on the basics
 * [Create Custom Color Palettes](https://onlinehelp.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.html){:target="_blank"}: How to create your own custom color palettes (sample .tps [here](https://raw.githubusercontent.com/tessam30/TableauTraining/master/Preferences.tps))  
 
-
 ### Data visualization in Excel
 * [Stephanie Evergreen](http://stephanieevergreen.com/blog/){:target="_blank"}: Blog and instructions on visualization in Excel
 <ul class="post-list">
